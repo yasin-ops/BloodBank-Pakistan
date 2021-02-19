@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile_Fragment"
+    android:id="@+id/profile_Fragment"
+
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_layout_bg_color"
+        >
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_progressBar"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="200dp"
+            android:visibility="visible"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            >
+            <TextView
+                android:id="@+id/p_BloodGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/big_round_circle"
+                android:gravity="center"
+                android:text="O+"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_marginStart="100sp"
+                android:visibility="invisible"
+                />
+            <TextView
+                android:id="@+id/p_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Muhammad Yaseen "
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="36sp"
+                android:visibility="invisible"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:visibility="invisible"
+                android:id="@+id/p_user_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="yasinayub7172@gmail.com"
+                android:layout_marginTop="30sp"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="15sp"
+                android:drawableRight="@drawable/ic_baseline_email_24"
+                android:layout_marginStart="7sp"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+            <TextView
+                android:visibility="invisible"
+                android:id="@+id/p_usercity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="17sp"
+                android:text="Lahore"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20sp"
+                />
+
+                <TextView
+                    android:visibility="invisible"
+                    android:id="@+id/p_usercountry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pakistan"
+                    android:layout_marginTop="18sp"
+                    android:layout_marginStart="4sp"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:visibility="invisible"
+                android:id="@+id/p_number"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7sp"
+                android:text="03048996421"
+                android:drawableRight="@drawable/ic_baseline_phone_24"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:visibility="invisible"
+                android:id="@+id/p_updateProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:layout_marginRight="12sp"
+                android:background="@drawable/gradient_layout_bg_color"
+                android:gravity="center"
+                android:text="Update Profile"
+                android:textColor="@color/colorWhiteDark"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="12sp"
+                >
+
+            </TextView>
+
+
+
+
+            <TextView
+                android:visibility="invisible"
+                android:id="@+id/p_blood_logo"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="@string/blood_donnor"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="50sp"
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/logo"/>
+            <TextView
+                android:id="@+id/p_save_life"
+                android:visibility="invisible"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="@string/save"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/savelogo"/>
+
+
+
+            <TextView
+                android:id="@+id/p_developer"
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Developed By : Muhammad Yaseen"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                />
+
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

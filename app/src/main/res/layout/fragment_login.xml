@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/loginFragment"
+
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Blood Bank \n Of Pakistan"
+        android:fontFamily="sans-serif-medium"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:drawableLeft="@drawable/logo"
+        android:drawablePadding="10dp"
+
+
+        />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/colorAccent"
+
+
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:id="@+id/email_login"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginStart="12sp"
+            android:layout_marginEnd="12sp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:textSize="20sp"
+
+
+            android:backgroundTint="@color/colorPrimaryDark"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/colorAccent"
+        app:passwordToggleEnabled="true"
+
+
+
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/pass"
+            android:id="@+id/passwords_login"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginStart="12sp"
+            android:layout_marginEnd="12sp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+
+
+            android:backgroundTint="@color/colorPrimaryDark"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <CheckBox
+        android:id="@+id/remember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember me "
+        android:layout_marginStart="12sp"
+        android:layout_marginEnd="12sp"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:id="@+id/forget_passwords_login"
+        android:layout_marginStart="12sp"
+        android:layout_marginEnd="12sp"
+        android:layout_marginTop="12sp"
+        android:textSize="15sp"
+        android:padding="4sp"
+        android:textStyle="bold|italic"
+        android:text="Forget Passwords"
+         android:background="@drawable/button_rounded_shape"
+        android:fontFamily="sans-serif-medium"
+
+        />
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signIn_login"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/button_rounded_shape"
+        android:layout_marginEnd="12dp"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        android:textColor="@color/colorWhiteDark"
+        android:textStyle="bold|italic"
+        android:text="Sign in"
+        android:fontFamily="sans-serif-medium"
+
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/register_login"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        android:background="@drawable/button_rounded_shape"
+        android:textColor="@color/colorWhiteDark"
+        android:textStyle="bold|italic"
+        android:text="Register"
+        android:fontFamily="sans-serif-medium"
+        />
+
+    </LinearLayout>
+</ScrollView>

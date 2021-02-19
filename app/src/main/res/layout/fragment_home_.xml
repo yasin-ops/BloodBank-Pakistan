@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/home_Fragment"
+   >
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/colorBackground"
+    >
+    <RelativeLayout
+        android:id="@+id/headerView"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/title"
+            android:textColor="@color/colorWhite"
+            android:text="@string/blood_donnor"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/logo"/>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardSearch"
+            android:visibility="invisible"
+            android:layout_below="@id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="15dp"
+            app:cardBackgroundColor="@color/colorPrimaryDark"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp">
+            <SearchView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:queryHint="Search here"
+                android:iconifiedByDefault="false"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:id="@+id/search_donor"
+                >
+
+            </SearchView>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPagerHeader"
+            android:foregroundGravity="center"
+            android:overScrollMode="never"
+            android:clipToPadding="false"
+            android:layout_below="@id/cardSearch"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+        <include android:id="@+id/shimmerMeal"
+            layout="@layout/item_view_pager_header_shimmer" />
+        <TextView
+            android:id="@+id/titleCategory"
+            android:text="@string/donnor"
+            android:textSize="19sp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/viewPagerHeader"/>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="400dp"
+            android:visibility="visible"
+            />
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/user_recylerview"
+            android:scrollbars="none"
+            android:layout_marginTop="10dp"
+            android:clipToPadding="false"
+            android:layout_below="@id/titleCategory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            />
+
+
+
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
+</LinearLayout>

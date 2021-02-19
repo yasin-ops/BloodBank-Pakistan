@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="50dp"
+    android:layout_below="@id/titleCategory"
+    app:cardCornerRadius="12dp"
+    android:layout_margin="6dp"
+    android:elevation="90dp"
+
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/groupSample"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/circle_shape"
+        android:gravity="center"
+        android:text="O+"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/donnor_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:text="Umar Ahmed "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryText"
+         />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50sp">
+        <TextView
+            android:id="@+id/donnor_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="03048996421"
+            android:layout_marginStart="127sp"
+            android:padding="3dp"
+            android:layout_marginTop="20sp"
+            android:drawableRight="@drawable/ic_baseline_phone_24"
+            android:textColor="@color/colorPrimaryText"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/donnor_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10sp"
+        android:text="Lahore"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="20sp"
+        android:gravity="right">
+    </TextView>
+</RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

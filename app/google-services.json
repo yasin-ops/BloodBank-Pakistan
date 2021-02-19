@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1063761653729",
+    "project_id": "bloodbankofpakistan-8914f",
+    "storage_bucket": "bloodbankofpakistan-8914f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1063761653729:android:13f9cfb9e36b3f9ce3aca0",
+        "android_client_info": {
+          "package_name": "com.muhammadyaseenFatima.blood_bank_pakistan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1063761653729-o69u9ckn5sh4n2pepcnvi8ao89iga2cd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbBmYb8Gy0b-KNC7U2BY0ePHuwwsmloMU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1063761653729-o69u9ckn5sh4n2pepcnvi8ao89iga2cd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

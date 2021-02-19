@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".update_profile_Fragment"
+    android:id="@+id/update_profile_Fragment"
+    android:background="@drawable/gradient_layout_bg_color"
+
+    >
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <ProgressBar
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/profile_update_progressBar"
+           android:layout_marginLeft="180dp"
+           android:layout_marginTop="200dp"
+           android:visibility="invisible"
+           />
+
+       <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <TextView
+        android:id="@+id/update_bloodgroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/circle_shape"
+        android:gravity="center"
+        android:text="O+"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/update_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5sp"
+      android:layout_marginTop="9sp"
+        android:textStyle="bold"
+        android:text="yasinayub7172@gmail.com"
+        android:drawableRight="@drawable/ic_baseline_email_24"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="15sp"
+ />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="90dp"
+        >
+    <EditText
+        android:id="@+id/update_editTextname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30sp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="15sp"
+        android:hint="Edit Name"
+        android:textColor="@color/colorPrimaryText"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="15sp"
+      >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/update_editTextnumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="15sp"
+        android:hint="Edit Number"
+        android:textColor="@color/colorPrimaryText"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:inputType="number"
+        >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/update_editTextcity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Edit City"
+        android:textColor="@color/colorPrimaryText"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:layout_marginStart="30sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="15sp"
+        android:inputType="textPersonName"
+        >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/update_editTextcountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="15sp"
+        android:hint=" Edit Country"
+        android:textColor="@color/colorPrimaryText"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:inputType="textPersonName"
+        >
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/update_Save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15sp"
+        android:layout_marginStart="30sp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/gradient_layout_bg_color"
+        android:gravity="center"
+        android:text="Save"
+        android:textColor="@color/colorWhiteDark"
+        android:textSize="30sp"
+        android:textStyle="bold"
+    />
+
+        <TextView
+            android:textColor="@color/colorPrimaryDark"
+            android:text="@string/blood_donnor"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="50sp"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/logo"/>
+        <TextView
+            android:textColor="@color/colorPrimaryDark"
+            android:text="@string/save"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/savelogo"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Developed By : Muhammad Yaseen"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            />
+
+
+
+
+    </LinearLayout>
+   </RelativeLayout>
+
+</ScrollView>

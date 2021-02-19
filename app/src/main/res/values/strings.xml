@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Blood Bank Pakistan</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pass">Pass</string>
+    <string name="email">Email</string>
+    <string name="country">Country</string>
+    <string name="city">City</string>
+    <string name="name">BloodBank</string>
+    <string name="number">Number</string>
+    <string name="register">Register</string>
+    <string name="donnorName">Name</string>
+    <string name="menu_Tittle">menu</string>
+    <string name="blood_donnor">Blood Bank Pakistan</string>
+    <string name="donnor">Blood Donnor</string>
+    <string name="save">Save other\'s Life</string>
+
+    <string-array name="bloodGroup">
+
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>O-</item>
+        <item>O+</item>
+
+    </string-array>
+
+
+</resources>

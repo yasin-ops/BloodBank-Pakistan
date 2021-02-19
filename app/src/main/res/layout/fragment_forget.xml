@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:id="@+id/forgetFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:text=" Forget Passwords "
+        android:drawableLeft="@drawable/forget_logo"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:textSize="30sp"
+
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="70dp"
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20sp"
+            android:id="@+id/forget_User_Email"
+            android:inputType="textEmailAddress"
+            android:textColor="#0E0E0E"
+            android:textStyle="bold"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_ReloginAgain"
+        android:layout_width="wrap_content"
+        android:padding="4dp"
+        android:layout_height="wrap_content"
+        android:text="Login New Passwords"
+        android:gravity="center"
+        android:background="@drawable/button_rounded_shape"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="10sp"
+        android:textStyle="italic"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        />
+
+    <Button
+        android:id="@+id/bttnResetPasswords"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="10sp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:text="Reset Passwords"
+        android:textSize="16sp"
+        />
+
+</LinearLayout>

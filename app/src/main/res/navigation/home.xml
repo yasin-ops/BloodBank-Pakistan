@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home"
+    app:startDestination="@id/home_Fragment">
+
+    <fragment
+        android:id="@+id/home_Fragment"
+        android:name="com.muhammadyaseenFatima.blood_bank_pakistan.home_Fragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home_" >
+        <action
+            android:id="@+id/action_home_Fragment_to_profile_Fragment"
+            app:destination="@id/profile_Fragment" />
+        <action
+            android:id="@+id/action_home_Fragment_to_info_Fragment"
+            app:destination="@id/info_Fragment" />
+        <action
+            android:id="@+id/action_home_Fragment_self"
+            app:destination="@id/home_Fragment" />
+        <action
+            android:id="@+id/action_home_Fragment_to_details_donner_Fragment2"
+            app:destination="@id/details_donner_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/info_Fragment"
+        android:name="com.muhammadyaseenFatima.blood_bank_pakistan.info_Fragment"
+        android:label="Info"
+        tools:layout="@layout/fragment_info_" >
+        <action
+            android:id="@+id/action_info_Fragment_to_home_Fragment"
+            app:destination="@id/home_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profile_Fragment"
+        android:name="com.muhammadyaseenFatima.blood_bank_pakistan.profile_Fragment"
+        android:label="Donnor Profile"
+        tools:layout="@layout/fragment_profile_" >
+        <action
+            android:id="@+id/action_profile_Fragment_to_update_profile_Fragment"
+            app:destination="@id/update_profile_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/update_profile_Fragment"
+        android:name="com.muhammadyaseenFatima.blood_bank_pakistan.update_profile_Fragment"
+        android:label="Update Profile"
+        tools:layout="@layout/fragment_update_profile_">
+        <action
+            android:id="@+id/action_update_profile_Fragment_to_profile_Fragment"
+            app:destination="@id/profile_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/details_donner_Fragment"
+        android:name="com.muhammadyaseenFatima.blood_bank_pakistan.details_donner_Fragment"
+        android:label="Detail Donnor"
+        tools:layout="@layout/fragment_details_donner_">
+        <argument
+            android:name="user"
+            app:argType="com.muhammadyaseenFatima.blood_bank_pakistan.UserRegisterData"
+            app:nullable="true" />
+        <argument
+            android:name="nessage"
+            android:defaultValue="default"
+            app:argType="string" />
+    </fragment>
+</navigation>
